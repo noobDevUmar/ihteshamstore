@@ -19,6 +19,11 @@ app.listen(3000,()=>{
 })
 
 
+app.get('/',(req,res)=>{
+
+res.json({message:"SALAM"})
+})
+
 app.post('/kapraentry',kapreEntry)
 
 app.post('/relationentry',relationEntry)
